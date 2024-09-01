@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+// arr=[3,89,45,2,9,67,10,99,1]
+// function findMin(arr){
+// min =arr[0];
+// for(i=0; i<arr.length; i++){
+//     if(arr[i]<min){
+//         min=arr[i]
+//     }
+// }
+// return min;
+// }
+// console.log(findMin(arr));
+// let date = new Date()
+// console.log(date.getMonth())
+
+// restaurantList =[
+//     {
+//         id:1,
+//         restaurantName:"KFS",
+//         address:"kismayu road",
+//         city:"Garissa",
+//     },
+//     {
+//         id:2,
+//         restaurantName:"al rahma",
+//         address:"kisumu road",
+//         city:"Wajir",
+//     },
+//     {
+//         id:3,
+//         restaurantName:"moon light",
+//         address:"uchumi road",
+//         city:"mwingi",
+//     },
+//     {
+//         id:4,
+//         restaurantName:"fries",
+//         address:"sankuri road",
+//         city:"garissa",
+//     },
+// ];
+
+
+
+// class RestaurantManager {
+//   constructor() {
+//     this.restaurantList = [];
+//   }
+
+//   printAllRestaurantNames() {
+//     for (const restaurant of this.restaurantList) {
+//       console.log(restaurant.name);
+//     }
+//   }
+
+//   filterRestaurantByCity(city) {
+//     const filteredRestaurants = this.restaurantList.filter(restaurant => restaurant.city === city);
+//     return filteredRestaurants;
+//   }
+// }
+
+// const restaurantManager = new RestaurantManager();
+
+// // Add some restaurants to the list
+// restaurantManager.restaurantList.push({ name: "Pizza Hut", city: "New York" });
+// restaurantManager.restaurantList.push({ name: "KFC", city: "Los Angeles" });
+// restaurantManager.restaurantList.push({ name: "McDonald's", city: "Chicago" });
+
+// // Call the printAllRestaurantNames method
+// restaurantManager.printAllRestaurantNames();
+
+// Call the filterRestaurantByCity method
+// const filteredRestaurants = restaurantManager.filterRestaurantByCity("New York");
+// console.log(filteredRestaurants);
+
+// let luckNumber = Math.floor(Math.random()*6 +1);
+// while(true){
+//     guess = prompt("enter number between 1 to 6");
+//     if(luckNumber==guess){
+//         alert("you won")
+//         break;
+//     }else{
+//         alert("try next time")
+//     }
+// }
+// let choice=4
+// let snack;
+// switch(choice){
+//     case 1:
+//         snack="cookies"
+//         break;
+//     case 2:
+//         snack="samosa"
+//         break;
+//     case 3:
+//         snack="kebab"
+//         break;
+//     case 4:
+//         snack="nafaqo"
+//         break;
+//     default:
+//         snack="out of stock"
+// }
+// console.log(snack)
+
+// for(i=0;i<=5;i++){
+//     for(j=1; j<=4; j++){
+//         console.log('value of i :' + i  +  'j :' +  j)
+//     }
+//     console.log('j loop is over')
+// }
+// console.log('i loop is over')
+// 
+// 
+// 
+
+// 
+const orders =[
+    
+        {id:1, item:"laptop", quantity:2},
+        {id:2, item:"desktop", quantity:5},
+        {id:3, item:"ipad", quantity:3}
+    
+]
+
+orders.forEach(order=>{
+    console.log(`order ${order.id}: ${order.item}: ${order.quantity}`);
+})
+
+fruits = ["banana", "orange","apple","mamgo", "beans", "tomato"]
+fruits.splice(2,3);
+console.log(fruits);
+
+        </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>netflix</title>
+</head>
+<body>
+
+     <!-- header section starts here -->
+<header class="d-flex justify-content-between align-items-center p-3">
+    <a href="#"><img src="./images/netfli-logo.png" alt="netflix-logo" class="logo"></a>
+    <div class="d-flex">
+        <select class="form-control mr-3">
+            <option>English</option>
+            <option>Arabic</option>
+            <option>Hindi</option>
+        </select>
+        <button class="btn btn-danger">Signin</button>
+    </div>
+
+</header>
+
+
+  <!-- header section starts here -->
+
+ <!-- main section ends here -->
+    <main class="container my-3">
+        <div class="text-center my-5 text-white">
+            <h1>Unlimited movies, TV shows, and More</h1>
+            <h4>Watch anywhere, Cancel anytime</h4>
+            <input type="email" class="form-control my-3" placeholder="Email address">
+            <button class="btn  btn-lg btn-danger">Get Started</button>
+
+        </div>
+
+        <section class="my-5">
+            <h2 class="text-white text-center my-3">Popular on Netflix</h2>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <img src="./images/1.jpg" class="w-100">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/2.jpg" class="w-100">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/3.jpg" class="w-100">
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/4.jpg" class="w-100">
+                </div>
+            </div>
+    
+        </section>
+
+        <div class="accordion" id="questions-accordion">
+
+<!-- accordion in goes here -->
+ <div class="card">
+  <div class="card-header bg-dark text-white" data-bs-toggle="collapse" data-bs-target="#question-1">
+<h3>What is Netflix?</h3>
+  </div>
+  <div class="collapse" id="question-1">
+  <div class="card-body">
+<p class="lead">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+  </div>
+</div>
+ </div>
+
+ <div class="card">
+  <div class="card-header bg-dark text-white" data-bs-toggle="collapse" data-bs-target="#question-2">
+<h3>How much does Netflix cost?</h3>
+  </div>
+  <div class="collapse" id="question-2">
+  <div class="card-body">
+<p class="lead">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Ksh 200 to Ksh 1,100 a month. No extra costs, no contracts.</p>
+  </div>
+</div>
+ </div>
+
+ <div class="card">
+  <div class="card-header bg-dark text-white" data-bs-toggle="collapse" data-bs-target="#question-3">
+<h3>Where can I watch?</h3>
+  </div>
+  <div class="collapse" id="question-3">
+  <div class="card-body">
+<p class="lead">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+  </div>
+</div>
+ </div>
+
+        </div>
+    </main>
+
+
+    <!-- main section ends here -->
+
+
+     <!-- footer section starts here -->
+     
+    <footer class="bg-dark text-white p-4 my-0 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li ><a href="#" class="text-white">Careers</a></li>
+                        <li ><a href="#" class="text-white">Privacy</a></li>
+                        <li ><a href="#" class="text-white">Terms</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li ><a href="#" class="text-white">Help Center</a></li>
+                        <li ><a href="#" class="text-white">Contact Us</a></li>
+                       
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer section starts here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
